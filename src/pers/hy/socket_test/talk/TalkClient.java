@@ -16,9 +16,9 @@ public class TalkClient {
 			
 			while(!readline.equals("stop")){
 				
-				os.println(readline);
-				os.flush();
-				System.out.println("Server:"+is.readLine());
+				os.println(readline);    // 向服务器发送信息
+				os.flush();              // 刷新，使服务器马上收到信息
+				System.out.println("Server:"+is.readLine());    // 收到服务器传过来信息
 				readline=sin.readLine();
 				
 				}
